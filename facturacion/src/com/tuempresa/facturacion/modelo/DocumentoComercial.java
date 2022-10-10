@@ -15,11 +15,14 @@ import lombok.*;
 @Entity @Getter @Setter
 
 @View(members=
-      "anyo, numero, fecha;"+
-       "cliente;"+
+      "anyo, numero, fecha;" +
+        
+ "datos{"+
+       "cliente;" +
        "detalles;" +
-       "observaciones"
-       )
+       "observaciones" +
+       "}"
+)
 abstract public class DocumentoComercial  extends Identificable{
 		
 		
